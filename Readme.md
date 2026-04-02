@@ -12,8 +12,8 @@ Ferramenta web para comparar listas de números de telefone em diferentes format
 
 Dadas duas listas:
 
-* Inscritos em formulário
-* Participantes de um grupo de WhatsApp
+* **Lista A**: Inscritos em formulário ou lista de inscrição
+* **Lista B**: Contatos extraídos de um grupo de WhatsApp usando a extensão [WA Contacts Extractor](https://chromewebstore.google.com/detail/wa-contacts-extractor)
 
 Os números podem estar em formatos diferentes, o que impede uma comparação direta.
 
@@ -62,6 +62,8 @@ Acesse `http://localhost:3000` no navegador, faça upload dos dois arquivos e cl
 ---
 
 ## Exemplo
+
+> Os números utilizados nos exemplos são fictícios.
 
 ### Entrada
 
