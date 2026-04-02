@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneListMatcher - Comparador de Listas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PhoneListMatcher</h1>
+    <p class="subtitle">Comparador de listas de telefone</p>
+
+    <form id="compareForm">
+      <div class="upload-group">
+        <div class="upload-box">
+          <label for="fileA">Lista A (Formulario)</label>
+          <input type="file" id="fileA" name="fileA" accept=".csv,.xlsx,.xls" required>
+          <span class="file-hint">CSV ou XLSX</span>
+        </div>
+        <div class="upload-box">
+          <label for="fileB">Lista B (Grupo WhatsApp)</label>
+          <input type="file" id="fileB" name="fileB" accept=".csv,.xlsx,.xls" required>
+          <span class="file-hint">CSV ou XLSX</span>
+        </div>
+      </div>
+      <button type="submit" id="btnCompare">Comparar</button>
+    </form>
+
+    <div id="results" class="results hidden">
+      <h2>Resultados</h2>
+      <div class="cards">
+        <div class="card card-match">
+          <div class="card-count" id="countMatch">0</div>
+          <div class="card-label">Correspondentes</div>
+          <ul id="listMatch" class="number-list hidden"></ul>
+          <button class="toggle-btn" data-target="listMatch">Ver numeros</button>
+        </div>
+        <div class="card card-missing">
+          <div class="card-count" id="countMissing">0</div>
+          <div class="card-label">Ausentes na Lista B</div>
+          <ul id="listMissing" class="number-list hidden"></ul>
+          <button class="toggle-btn" data-target="listMissing">Ver numeros</button>
+        </div>
+        <div class="card card-extra">
+          <div class="card-count" id="countExtra">0</div>
+          <div class="card-label">Extras na Lista B</div>
+          <ul id="listExtra" class="number-list hidden"></ul>
+          <button class="toggle-btn" data-target="listExtra">Ver numeros</button>
+        </div>
+      </div>
+      <p class="totals" id="totals"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
