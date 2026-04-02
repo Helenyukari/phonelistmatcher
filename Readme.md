@@ -2,6 +2,10 @@
 
 Ferramenta web para comparar listas de números de telefone em diferentes formatos.
 
+<!-- ![Tela inicial](assets/tela-inicial.png) -->
+
+![Tela de resultados](assets/tela-resultados.png)
+
 ---
 
 ## Problema
